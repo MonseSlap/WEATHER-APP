@@ -55,8 +55,8 @@ MIT
 
 ---
 
-### 3. **Incluye un `.env.example`**
-Agrega un archivo `.env.example` en el backend con el siguiente contenido:
+### ¡Importante! **Incluye un `.env`**
+Agrega un archivo `.env` en el backend con el siguiente contenido:
 
 ```env
 WEATHERAPI_KEY=tu_api_key_aqui
