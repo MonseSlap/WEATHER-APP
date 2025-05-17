@@ -17,9 +17,12 @@ Aplicación fullstack para consultar el clima de cualquier ciudad del mundo.
 ```bash
 git clone https://github.com/tuusuario/weather-app.git
 cd weather-app
+```
+
 
 ### 2. Configura el backend
-
+```bash
+go mod init weather-app
 cd backend
 cp .env.example .env # o crea el archivo .env
 ```
