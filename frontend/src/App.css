@@ -1,0 +1,73 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+body.sunny-text, body.cloudy-text, body.rainy-text, body.storm-text, body.snow-text, body.clear-text, body.little-precipitations-text, body.mist-text, body.default-text {
+   transition: all 1s;
+}
+
+ 
+.info-box {
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 16px; 
+  background: rgba(255, 255, 255, 0.151); /* Fondo semitransparente por defecto */
+  max-width: 400px;
+  transition: all 1s;
+}
+
+body.sunny-bg { background: linear-gradient(to top, #ffe259, #ffa751); }
+body.cloudy-bg { background: linear-gradient(to top, #bdc3c7, #2c3e50); 
+  color: #2c1a0a;}
+body.rainy-bg { background: linear-gradient(to top, #4e54c8, #8f94fb); }
+body.storm-bg { background: linear-gradient(to top, #232526, #414345); }
+body.snow-bg { background: linear-gradient(to top, #e0eafc, #cfdef3); }
+body.clear-bg { 
+  background: linear-gradient(to top, #ffe259, #2f80ed); 
+  color: #1b2a35;
+}
+body.little-precipitations-bg { background: linear-gradient(to top, #2f6274, #0a75bd);}
+body.mist-bg { background: linear-gradient(to top, #444444, #0c2836);
+color: #c2e3ff;}
+body.default-bg { background: #f5f5f5; }
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
