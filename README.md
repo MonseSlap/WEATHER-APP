@@ -22,20 +22,20 @@ cd weather-app
 
 cd backend
 cp .env.example .env # o crea el archivo .env
-# Edita .env y coloca tu WEATHERAPI_KEY
+```
+### Edita .env y coloca tu WEATHERAPI_KEY
+```bash
 go mod tidy
 go run main.go
-
+```
 ### 3. Configura el frontend
-
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
-#  ---  #
-
-
-## Uso
+### Uso
 
 Accede a http://localhost:5173 en tu navegador.
 Escribe una ciudad y consulta el clima.
