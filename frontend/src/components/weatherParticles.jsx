@@ -3,10 +3,19 @@ import Particles from "react-tsparticles";
 import '../App.css'
 
 export default function WeatherParticles({ type }) {
-  let options = {};
+  let options = {
+    particles: {
+      number: { value: 100 },
+      color: { value: "#fff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.8 },
+      size: { value: 3 },
+      move: { direction: "bottom", speed: 2 }
+    }
+  };
   console.log("WeatherParticles type:", type);
 
-  if (type === "lluvia") {
+  if (type === "lluvia" || type === "parcialmente nublado") {
     options = {
       particles: {
         number: { value: 80 },
@@ -49,8 +58,7 @@ export default function WeatherParticles({ type }) {
         size: { value: 8 },
         move: { direction: "bottom", speed: 1 }
       }
-    };
-    console.log("2")
+    }; 
   } else {
     // Por defecto, sin partículas
     options = { 
