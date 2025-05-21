@@ -18,6 +18,8 @@ body.sunny-text, body.cloudy-text, body.rainy-text, body.storm-text, body.snow-t
   background: rgba(255, 255, 255, 0.151); /* Fondo semitransparente por defecto */
   max-width: 400px;
   transition: all 1s;
+  z-index: 1;
+  position: relative;
 }
 
 body.sunny-bg { background: linear-gradient(to top, #ffe259, #ffa751); }
