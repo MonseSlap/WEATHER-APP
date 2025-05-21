@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from "react";
-import Photo from '../assets/PhotoProfile.png'
+import React, { useRef, useEffect } from "react"; 
 
 function randomBetween(a, b) {
   return a + Math.random() * (b - a);
