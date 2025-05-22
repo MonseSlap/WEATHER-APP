@@ -2,8 +2,9 @@ package main
 
 import (
 	"encoding/json"
-	"log"
 	"net/http"
+
+	"os"
 
 	"github.com/gorilla/mux"
 	"github.com/monseslap/weather-app/config"
@@ -22,8 +23,11 @@ func main() {
 	"https://weather-monse-app.vercel.app"},
 	}).Handler(r)
 
-	log.Println("Server running on :8080")
-	http.ListenAndServe(":8080", handler)
+	port := os.Getenv("PORT")
+if port == "" {
+    port = "8080" // Valor por defecto para desarrollo local
+}
+http.ListenAndServe(":" + port, handler)
 }
 
 func GetWeather(w http.ResponseWriter, r *http.Request) {
