@@ -18,7 +18,8 @@ func main() {
 
 	// Configura CORS para React (puerto 3000)
 	handler := cors.New(cors.Options{
-		AllowedOrigins: []string{"http://localhost:5173"},
+		AllowedOrigins: []string{"http://localhost:5173",
+	"https://weather-monse-app.vercel.app"},
 	}).Handler(r)
 
 	log.Println("Server running on :8080")
